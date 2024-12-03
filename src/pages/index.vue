@@ -40,10 +40,17 @@ import AppHowItWorks from '@/components/AppHowItWorks.vue';
       font-weight: 400;
       font-size: 2.3rem;
       color: rgb(220, 220, 220);
+
+      @media (max-width: 1000px) {
+        font-size: 1.8rem;
+      }
+      @media (max-width: 600px) {
+        font-size: 1.6rem;
+      }
     }
 
     .pageRule {
-      width: 30%;
+      width: 30vw;
       height: 3px;
       background-color: #77f64b;
     }

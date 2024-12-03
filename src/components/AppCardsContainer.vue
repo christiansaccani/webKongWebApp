@@ -67,8 +67,8 @@ const observeVisibility = (card, delay) => {
 onMounted(() => {
   // Inizializza l'osservatore per ogni card con ritardi crescenti
   if (card1.value) observeVisibility(card1.value, "0s");
-  if (card2.value) observeVisibility(card2.value, "0.4s");  // Ritardo di 0.2s per la seconda card
-  if (card3.value) observeVisibility(card3.value, "0.8s");  // Ritardo di 0.4s per la terza card
+  if (card2.value) observeVisibility(card2.value, "0.2s");  // Ritardo di 0.2s per la seconda card
+  if (card3.value) observeVisibility(card3.value, "0.4s");  // Ritardo di 0.4s per la terza card
 });
 </script>
 
@@ -78,10 +78,18 @@ onMounted(() => {
 
 #servicesContainer {
   margin: 4rem 0 6rem;
-  width: 100%;
+  width: 100vw;
   max-width: 1440px;
   display: flex;
   justify-content: space-around;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    margin:0 0 4rem;
+}
 }
 
 .cardContainer {
@@ -100,6 +108,16 @@ onMounted(() => {
   transform: translateY(100px);  /* Inizia fuori dalla vista */
   opacity: 0;  /* Inizia invisibile */
   transition: all 0.3s linear !important;
+
+  @media (max-width: 1400px) {
+    height: 350px;
+    width: 300px;
+}
+
+@media (max-width: 800px) {
+  height: 300px;
+  width: 90%;
+}
 }
 
 .cardContainer i {
@@ -110,6 +128,11 @@ onMounted(() => {
   border-radius: 50%;
   background-color: #121212;
   transition: all 0.3s linear;
+
+  @media (max-width: 800px) {
+    font-size: 2.8rem;
+    padding: 1.3rem;
+}
 }
 
 .cardTitle {
@@ -118,6 +141,10 @@ onMounted(() => {
   letter-spacing: 4px;
   color: whitesmoke;
   transition: color 0.2s linear;
+
+  @media (max-width: 800px) {
+    font-size: 1.6rem;
+}
 }
 
 p {
@@ -130,17 +157,28 @@ p {
 }
 
 .cardContainer:hover {
-  // background-color: #77f64b;
-  border-color: #77f64b;
+  @media (min-width: 801px) {
+    border-color: #77f64b;
+}
+  
 }
 
 h2 {
   padding-bottom: 2rem;
 }
+
 #cardsIntro {
+  max-width: 100vw;
   font-size: 1.8rem !important;
-  padding-bottom: 4rem;
+  padding: 0 .5rem 4rem;
   letter-spacing: 3px;
-  color: #726e6e;;
+  color: #726e6e;
+
+  @media (max-width: 1000px) {
+    font-size: 1.5rem !important;
+  }
+  @media (max-width: 600px) {
+    font-size: 1.3rem !important;
+  }
 }
 </style>

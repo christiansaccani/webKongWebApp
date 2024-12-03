@@ -25,11 +25,19 @@ h2 {
 }
 
 p {
+  max-width: 100vw;
   font-size: 1.8rem !important;
-  padding-bottom: 4rem;
+  padding: 0 .5rem 4rem;
   letter-spacing: 3px;
   color: #726e6e;
-  ;
+  text-align: center;
+  
+  @media (max-width: 800px) {
+    font-size: 1.5rem !important;
+  }
+  @media (max-width: 400px) {
+    font-size: 1.3rem !important;
+  }
 
 }
 
@@ -38,12 +46,26 @@ p {
   gap: .5rem;
   margin-bottom: 10rem;
 
+  @media (max-width: 800px) {
+    margin-bottom: 8rem;
+    }
+
   .teamMember {
     width: 180px;
     height: 180px;
     border-radius: 50%;
     border: 2px solid whitesmoke;
     overflow: hidden;
+
+    @media (max-width: 800px) {
+      width: 110px;
+      height: 110px;
+    }
+
+    @media (max-width: 400px) {
+      width: 80px;
+      height: 80px;
+    }
 
     img {
         width: 100%;
