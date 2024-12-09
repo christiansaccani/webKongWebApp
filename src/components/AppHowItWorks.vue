@@ -75,7 +75,7 @@
   <style lang="scss" scoped>
   
   #cardsFlowContainer {
-    margin: 4rem 0 6rem;
+    margin: 4rem 0 12rem;
     width: 100%;
     max-width: 1440px;
     display: flex;
@@ -86,7 +86,11 @@
       justify-content: flex-start;
       align-items: center;
       gap: 2rem;
-      margin:0 0 6rem;
+      margin: 2rem 0 10rem;
+    }
+
+    @media (max-width: 600px) {
+      margin: 2rem 0 6rem;
     }
   }
   
@@ -101,8 +105,8 @@
     gap: 2rem;
     cursor: pointer;
     background-color: #121212;
-    transform: translateY(100px);  /* Inizia fuori dalla vista */
-    opacity: 0;  /* Inizia invisibile */
+    transform: translateY(100px);
+    opacity: 0;
     transition: all 0.3s linear !important;
 
     @media (max-width: 1200px) {
@@ -126,7 +130,7 @@
     text-align: center;
     font-size: 2rem;
     letter-spacing: 4px;
-    color: whitesmoke;
+    color: rgb(220, 220, 220);
     transition: color 0.2s linear;
 
     @media (max-width: 1200px) {
@@ -135,7 +139,6 @@
   }
   
   .cardContainer:hover {
-    // background-color: #77f64b;
     border-color: #77f64b;
   }
   

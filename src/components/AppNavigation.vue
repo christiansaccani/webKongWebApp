@@ -7,10 +7,11 @@
       </div>
 
       <ul id="sectionsUlNav">
-        <li @click="scrollToSection('AppAboutUs')">HOME</li>
+        <li @click="scrollToSection('AppHead')">HOME</li>
         <li @click="scrollToSection('AppCardsContainer')">SERVICES</li>
+        <li @click="scrollToSection('AppAboutUs')">ABOUT US</li>
+        <li @click="scrollToSection('AppFaq')">FAQ</li>
         <li @click="scrollToSection('AppFooter')">CONTACTS</li>
-        <li>FAQ</li>
       </ul>
     </div>
   </nav>
@@ -27,11 +28,13 @@ const scrollToSection = (sectionId) => {
 </script>
 
 <style lang="scss" scoped>
+
+
 nav {
   background-color: #121212;
   height: 120px;
   width: 100%;
-  padding: 1rem 0;
+  padding: 1rem 4rem;
 
   display: flex;
   justify-content: center;
@@ -42,6 +45,7 @@ nav {
   z-index: 1000;
 
   transition: top 0.3s ease-in-out;
+  animation: fadeIn 1s forwards;
 
   #navigationContainer {
     display: flex;
@@ -51,7 +55,7 @@ nav {
     max-width: 1865px;
     padding: 0 2rem;
 
-    @media (max-width: 800px) {
+    @media (max-width: 1100px) {
         justify-content: center;
       }
 
@@ -59,24 +63,25 @@ nav {
       display: flex;
       align-items: center;
 
-      color: black;
+      color: rgb(220, 220, 220);
+      opacity: .7;
       font-size: 1.4rem;
       font-weight: 600;
-      letter-spacing: 5px;
+      letter-spacing: 7px;
 
-      @media (max-width: 800px) {
-        font-size: 1.6rem;
+      @media (max-width: 1100px) {
+        
         letter-spacing: 7px;
       }
 
       img {
-        height: 50px;
-        margin-right: 0.5rem;
+        height: 70px;
+        margin-right: 2rem;
         opacity: .6;
 
-        @media (max-width: 800px) {
+        @media (max-width: 1100px) {
+          margin-right: 1.5rem;
           height: 70px;
-          margin-right: 2rem;
       }
       }
 
@@ -100,7 +105,7 @@ nav {
       border-radius: 48px;
       padding: .5rem 3rem;
 
-      @media (max-width: 800px) {
+      @media (max-width: 1100px) {
         display: none;
       }
 

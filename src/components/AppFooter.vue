@@ -8,8 +8,7 @@
       </div>
 
       <div id="contacts">
-        <p>+39 333 7853150</p>
-        <p>hello@webkong.net</p>
+        <a href="mailto:hello@webkong.net?subject=Richiesta%20Preventivo&body=Ciao,%20vorrei%20richiedere%20un%20preventivo.">hello@webkong.net</a>
         <p>Bologna, Italy</p>
       </div>
 
@@ -41,6 +40,7 @@ footer {
   flex-direction: column;
   align-items: center;
   padding-bottom: 2rem;
+  color: rgb(220, 220, 220);
 
   section {
     width: 100%;
@@ -83,6 +83,17 @@ footer {
   }
 }
 
+a {
+  text-decoration: none;
+  transition: color .2s linear;
+      letter-spacing: 3px;
+      color: rgb(220, 220, 220);
+
+        &:hover {
+        color: #77f64b;
+      }
+}
+
       p {
       transition: color .2s linear;
       letter-spacing: 3px;
@@ -97,11 +108,11 @@ footer {
       display: flex;
       align-items: center;
       gap: 2rem;
-      cursor: pointer;
 
       i {
         font-size: 1.3rem;
         transition: color .2s linear;
+        cursor: pointer;
 
         &:hover {
         color: #77f64b;

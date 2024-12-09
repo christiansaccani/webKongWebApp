@@ -79,6 +79,11 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 
+#AppCardsContainer {
+  opacity: 0;
+  animation: fadeIn 1s 2s forwards;
+}
+
 #servicesContainer {
   margin: 4rem 0 6rem;
   width: 100vw;
@@ -86,7 +91,7 @@ onMounted(() => {
   display: flex;
   justify-content: space-around;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1100px) {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -114,12 +119,12 @@ onMounted(() => {
 
   @media (max-width: 1400px) {
     height: 350px;
-    width: 80vw;
+    width: 30vw;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1100px) {
   height: 300px;
-  width: 90%;
+  width: 80%;
 }
 }
 
@@ -142,7 +147,7 @@ onMounted(() => {
   text-align: center;
   font-size: 2rem;
   letter-spacing: 4px;
-  color: whitesmoke;
+  color: rgb(220, 220, 220);
   transition: color 0.2s linear;
 
   @media (max-width: 800px) {
@@ -154,7 +159,7 @@ p {
   text-align: center;
   font-size: 1.2rem;
   letter-spacing: 1px;
-  color: whitesmoke;
+  color: rgb(220, 220, 220);
   transition: all 0.1s linear;
   line-height: 2.5rem;
 }

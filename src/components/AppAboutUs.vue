@@ -1,6 +1,6 @@
 <template>
 
-  <h2 id="AppCardsContainer">COLLAB REAL TIME</h2>
+  <h2 id="AppAboutUs">COLLAB REAL TIME</h2>
 
   <p>Ready to meet your evolving needs.</p>
 
@@ -54,7 +54,7 @@ p {
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    border: 2px solid whitesmoke;
+    border: 2px solid rgb(220, 220, 220);
     overflow: hidden;
 
     @media (max-width: 800px) {

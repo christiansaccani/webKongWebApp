@@ -1,5 +1,5 @@
 <template>
-  <div class="faq-container">
+  <div id="AppFaq">
     <h2>DOMANDE FREQUENTI</h2>
 
     <div
@@ -69,10 +69,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.faq-container {
+#AppFaq {
   width: 100%;
   max-width: 1440px;
-  color: white;
+  color: rgb(220, 220, 220);
   margin-bottom: 8rem;
   padding: 0 2rem;
 }
@@ -81,9 +81,10 @@ export default {
   border-bottom: 2px solid #77f64b;
   padding: 1.5rem 0;
   letter-spacing: 1px;
+  
 
   &.active .faq-answer {
-    max-height: 200px; /* Altezza massima visibile */
+    max-height: 200px;
     opacity: 1;
     transition: all 0.6s ease-in;
   }
@@ -113,5 +114,6 @@ padding-left: 1rem;
 
 h5 {
   font-size: 1.2rem;
+  cursor: pointer;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div id="AppHead">
+    <div id=" ">
         <span style="text-transform: uppercase;" class="gradientText">Craft digital solutions<br>
         and conquer online spaces</span>
           <p><span>We know what's going on.</span> You need top designes to stand out, but hiring in-house designers can be costly and time-consuming.
@@ -48,7 +48,7 @@
   span {
     font-size: 3rem;
     opacity: 0;
-    animation: fadeIn 1s forwards;
+    animation: fadeIn 1s .5s forwards;
 
     @media (max-width: 1400px) {
       font-size: 2.8rem;
