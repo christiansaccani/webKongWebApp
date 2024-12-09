@@ -51,6 +51,10 @@ nav {
     max-width: 1865px;
     padding: 0 2rem;
 
+    @media (max-width: 800px) {
+        justify-content: center;
+      }
+
     #companyNameNav {
       display: flex;
       align-items: center;
@@ -60,10 +64,20 @@ nav {
       font-weight: 600;
       letter-spacing: 5px;
 
+      @media (max-width: 800px) {
+        font-size: 1.6rem;
+        letter-spacing: 7px;
+      }
+
       img {
         height: 50px;
         margin-right: 0.5rem;
         opacity: .6;
+
+        @media (max-width: 800px) {
+          height: 70px;
+          margin-right: 2rem;
+      }
       }
 
       span {
@@ -85,6 +99,10 @@ nav {
       height: 4rem;
       border-radius: 48px;
       padding: .5rem 3rem;
+
+      @media (max-width: 800px) {
+        display: none;
+      }
 
       li {
         position: relative;

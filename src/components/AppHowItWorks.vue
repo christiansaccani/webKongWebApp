@@ -43,20 +43,23 @@
   };
   
   const observeVisibility = (card, delay) => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // Se la carta non è già stata animata
+        if (!card.classList.contains("animated")) {
           // Applica l'animazione con il ritardo specificato
           setTimeout(() => {
-            animateCard(card);
+            animateCard(card, delay);
+            // Aggiungi la classe per marcare la carta come animata
+            card.classList.add("animated");
           }, parseFloat(delay) * 1000); // Converte il ritardo da "0.4s" a millisecondi
-        } else {
-          hideCard(card);
         }
-      });
+      }
     });
-  
-    observer.observe(card);
+  });
+
+  observer.observe(card);
   };
   
   onMounted(() => {
@@ -77,21 +80,36 @@
     max-width: 1440px;
     display: flex;
     justify-content: space-around;
+
+    @media (max-width: 1200px) {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 2rem;
+      margin:0 0 6rem;
+    }
   }
   
   .cardContainer {
-    width: 400px;
+    width: 22vw;
     border: 5px solid transparent;
     box-shadow: 4px 4px 4px #77f64b;
     border-radius: 24px;
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
     display: flex;
+    align-items: center;
     gap: 2rem;
     cursor: pointer;
     background-color: #121212;
     transform: translateY(100px);  /* Inizia fuori dalla vista */
     opacity: 0;  /* Inizia invisibile */
     transition: all 0.3s linear !important;
+
+    @media (max-width: 1200px) {
+      justify-content: space-around;
+      width: 80vw;
+      height: 214px;
+    }
   }
   
   .cardContainer i {
@@ -110,15 +128,10 @@
     letter-spacing: 4px;
     color: whitesmoke;
     transition: color 0.2s linear;
-  }
-  
-  p {
-    text-align: center;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-    color: whitesmoke;
-    transition: all 0.1s linear;
-    line-height: 2.5rem;
+
+    @media (max-width: 1200px) {
+      font-size: 1.5rem;
+    }
   }
   
   .cardContainer:hover {

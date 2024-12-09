@@ -73,7 +73,8 @@ export default {
   width: 100%;
   max-width: 1440px;
   color: white;
-  margin: 0 2rem 8rem;
+  margin-bottom: 8rem;
+  padding: 0 2rem;
 }
 
 .faq-item {
@@ -93,9 +94,7 @@ export default {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  padding-top: 10px;
-  border-radius: 5px;
-  padding-left: 1rem;
+  padding: 1rem 0 0 1rem;
 }
 
 .faq-answer {

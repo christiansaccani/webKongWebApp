@@ -48,15 +48,40 @@ footer {
     justify-content: space-around;
     padding-bottom: 6rem;
 
+    @media (max-width: 800px) {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 3rem;
+      padding-bottom: 3rem;
+    }
+
     #moveTo p {
         cursor: pointer;
     }
 
-    #moveTo,
-    #contacts {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
+    #moveTo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  @media (max-width: 800px) {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+#contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  @media (max-width: 800px) {
+    align-items: center;
+  }
+}
 
       p {
       transition: color .2s linear;
@@ -90,5 +115,5 @@ footer {
   font-weight: 400;
   letter-spacing: 2px;
   }
-}
+
 </style>

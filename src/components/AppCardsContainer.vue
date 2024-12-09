@@ -51,12 +51,15 @@ const observeVisibility = (card, delay) => {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        // Applica l'animazione con il ritardo specificato
-        setTimeout(() => {
-          animateCard(card);
-        }, parseFloat(delay) * 1000); // Converte il ritardo da "0.4s" a millisecondi
-      } else {
-        hideCard(card);
+        // Se la carta non è già stata animata
+        if (!card.classList.contains("animated")) {
+          // Applica l'animazione con il ritardo specificato
+          setTimeout(() => {
+            animateCard(card, delay);
+            // Aggiungi la classe per marcare la carta come animata
+            card.classList.add("animated");
+          }, parseFloat(delay) * 1000); // Converte il ritardo da "0.4s" a millisecondi
+        }
       }
     });
   });
@@ -111,7 +114,7 @@ onMounted(() => {
 
   @media (max-width: 1400px) {
     height: 350px;
-    width: 300px;
+    width: 80vw;
 }
 
 @media (max-width: 800px) {
