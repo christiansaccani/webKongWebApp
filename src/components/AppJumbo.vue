@@ -1,5 +1,5 @@
 <template>
-    <div id=" ">
+    <div id="AppHead">
         <span style="text-transform: uppercase;" class="gradientText">Craft digital solutions<br>
         and conquer online spaces</span>
           <p><span>We know what's going on.</span> You need top designes to stand out, but hiring in-house designers can be costly and time-consuming.

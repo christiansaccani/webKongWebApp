@@ -63,8 +63,8 @@ nav {
       display: flex;
       align-items: center;
 
-      color: rgb(220, 220, 220);
-      opacity: .7;
+      color: #767676;
+      opacity: .6;
       font-size: 1.4rem;
       font-weight: 600;
       letter-spacing: 7px;
@@ -76,7 +76,7 @@ nav {
 
       img {
         height: 70px;
-        margin-right: 2rem;
+        margin-right: 1rem;
         opacity: .6;
 
         @media (max-width: 1100px) {

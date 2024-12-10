@@ -131,6 +131,23 @@ body {
   }
 }
 
+/* Modifica lo stile della scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Larghezza della scrollbar */
+  height: 12px; /* Altezza per barre orizzontali */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #77f64b; /* Colore del cursore */
+  border-radius: 6px; /* Arrotonda i bordi */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #726e6e; /* Colore del tracciato */
+  background-color: rgba(18, 18, 18);
+  border-radius: 6px; /* Arrotonda i bordi del tracciato */
+}
+
 @keyframes fadeIn {
     from {
       opacity: 0;
