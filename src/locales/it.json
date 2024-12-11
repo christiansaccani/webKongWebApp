@@ -1,0 +1,45 @@
+{
+    "home": "Home",
+    "services": "Servizi",
+    "aboutUs": "Chi Siamo",
+    "faq": "Faq",
+    "contacts": "Contatti",
+    "goUp": "Torna Su",
+
+    "gradientText": "Realizza soluzioni digitali e<br>conquista l\u2019online",
+    "jumboText": "<span>Sappiamo come funziona.</span> Hai bisogno di design di alto livello per distinguerti, ma assumere designer privati può essere costoso e richiedere molto tempo. <br><span>È qui che entra in gioco WebKong.</span>",
+
+    "appCardsContainerTitle": "Cosa otterrai",
+    "cardsIntro": "Risolviamo i problemi legati ai processi creativi.",
+    "developing": "Sviluppo web",
+    "developingSlogan": "Codice di alta qualità al minimo del costo.",
+    "design": "Design su misura",
+    "designSlogan": "Per trasformare la tua visione in realtà.",
+    "social": "Social Media",
+    "socialSlogan": "Sopravvivere nella giungla dei media.",
+
+    "appAboutUsTitle": "Collaborazione in tempo reale",
+    "appAboutUsIntro": "Pronti a soddisfare le tue esigenze in continua evoluzione.",
+
+    "howItWorks": "Come funziona",
+    "stepOne": "Raccontaci la tua visione",
+    "stepTwo": "Ricevi la magia",
+    "stepThree": "Ottieni il materiale",
+
+    "faqTitle": "Domande frequenti",
+
+    "QuestionOne": "Che tipo di siti realizzate?",
+    "AnswerOne": "Creiamo landing page, siti vetrina e soluzioni personalizzate per ristoranti, startup tech e piccole imprese. Ottimizzati su tutti i dispositivi.",
+
+    "QuestionTwo": "Quanto tempo richiederà lo sviluppo del sito?",
+    "AnswerTwo": "Dipende dalla grandezza del sito, ma per un sito vetrina cerchiamo di fornire una versione finale entro una settimana dalla data di inizio.",
+
+    "QuestionThree": "Posso richiedere modifiche durante la creazione?",
+    "AnswerThree": "Sì, potrete contattarci in qualsiasi momento per discutere di modifiche o aggiunte, anche last minute.",
+
+    "QuestionFour": "Avrò il pieno controllo del sito una volta completato?",
+    "AnswerFour": "Sì, avrete la proprietà del codice, del design e del dominio.",
+
+    "QuestionFive": "Offrite supporto continuo?",
+    "AnswerFive": "Sì, offriamo supporto e manutenzione continua per garantire un servizio senza interruzioni."
+}

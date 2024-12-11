@@ -1,0 +1,45 @@
+{
+    "home": "Accueil",
+    "services": "Services",
+    "aboutUs": "À propos",
+    "faq": "FAQ",
+    "contacts": "Contacts",
+    "goUp": "Monter",
+
+    "gradientText": "Concevez des solutions numériques et conquérez les espaces online",
+    "jumboText": "<span>On savons comment ça fonctionne.</span> Vous avez besoin de designs de qualité pour vous démarquer, mais recruter des in- designers  peut être coûteux et chronophage.<br><span>C\u2019est là qu\u2019intervient WebKong.</span>",
+
+    "appCardsContainerTitle": "Ce que vous obtenez",
+    "cardsIntro": "Nous résolvons les problèmes liés aux processus créatifs.",
+    "developing": "Web Développement",
+    "developingSlogan": "Un codage de haute qualité à une fraction du coût.",
+    "design": "Design sur mesure",
+    "designSlogan": "Pour donner vie à votre vision.",
+    "social": "Réseaux sociaux",
+    "socialSlogan": "Survivre la jungle",
+
+    "appAboutUsTitle": "Collaboration en temps réel",
+    "appAboutUsIntro": "Prêts à répondre à vos besoins en constante évolution.",
+
+    "howItWorks": "Comment ça marche",
+    "stepOne": "Partagez votre vision",
+    "stepTwo": "Recevez la magie",
+    "stepThree": "Obtenez le matériel",
+
+    "faqTitle": "Faq",
+
+    "QuestionOne": "Quels types de sites créez-vous?",
+    "AnswerOne": "Nous créons des landing pages, des sites vitrines et des solutions personnalisées pour les restaurants, les startups tech et les petites entreprises. Optimisés pour tous les appareils.",
+
+    "QuestionTwo": "Combien de temps prendra le développement du site?",
+    "AnswerTwo": "Cela dépend de la taille du site, mais pour un site vitrine, nous visons à livrer une version finale dans un délai d\u2019une semaine à partir de la date de début.",
+
+    "QuestionThree": "Puis-je demander des modifications pendant la création?",
+    "AnswerThree": "Oui, vous pouvez nous contacter à tout moment pour discuter des modifications ou ajouts, même de dernière minute.",
+
+    "QuestionFour": "Aurais-je un contrôle total sur le site une fois terminé?",
+    "AnswerFour": "Oui, vous aurez la propriété du code, du design et du domaine.",
+
+    "QuestionFive": "Proposez-vous un support continu?",
+    "AnswerFive": "Oui, nous offrons un support et une maintenance continue pour garantir un service sans interruption."
+}

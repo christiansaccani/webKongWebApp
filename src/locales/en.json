@@ -1,0 +1,45 @@
+{
+    "home": "Home",
+    "services": "Services",
+    "aboutUs": "About Us",
+    "faq": "Faq",
+    "contacts": "Contacts",
+    "goUp": "Go Up",
+
+    "gradientText": "Craft digital solutions<br>and conquer online spaces",
+    "jumboText": "<span>We know what's going on.</span> You need top designes to stand out, but hiring in-house designers can be costly and time-consuming. <br><span>That's when WebKong comes in.</span>",
+
+    "appCardsContainerTitle": "What you'll get",
+    "cardsIntro": "We resolve problems associated with creative procedures.",
+    "developing": "Developing",
+    "developingSlogan": "High quality coding at a fraction of the cost.",
+    "design": "Tailor-Made design",
+    "designSlogan": "To make your vision reality.",
+    "social": "Social Media",
+    "socialSlogan": "Surviving in media\u2019s the jungle",
+
+    "appAboutUsTitle": "Collab real time",
+    "appAboutUsIntro": "Ready to meet your evolving needs.",
+
+    "howItWorks": "How it works",
+    "stepOne": "Tell us your vision",
+    "stepTwo": "Recive the magic",
+    "stepThree": "Get the material",
+
+    "faqTitle": "Faq",
+
+    "QuestionOne": "What types of websites do you create?",
+    "AnswerOne": "We create landing pages, showcase sites, and custom solutions for restaurants, tech startups, and small businesses. Fully optimized across all devices.",
+
+    "QuestionTwo": "How long will it take to develop the website?",
+    "AnswerTwo": "It depends on the size of the site, but for a showcase site, we aim to deliver a final version within a week from the start date.",
+
+    "QuestionThree": "Can I request changes during the creation process?",
+    "AnswerThree": "Yes, you can contact us anytime to discuss changes or additions, even last-minute ones.",
+
+    "QuestionFour": "Will I have full control of the website once it\u2019s completed?",
+    "AnswerFour": "Yes, you will own the code, design, and domain.",
+
+    "QuestionFive": "Do you offer ongoing support?",
+    "AnswerFive": "Yes, we provide continuous support and maintenance to ensure uninterrupted service."
+}

@@ -1,9 +1,7 @@
 <template>
     <div id="AppHead">
-        <span style="text-transform: uppercase;" class="gradientText">Craft digital solutions<br>
-        and conquer online spaces</span>
-          <p><span>We know what's going on.</span> You need top designes to stand out, but hiring in-house designers can be costly and time-consuming.
-          <br><span>That's when WebKong comes in.</span></p>
+          <span class="gradientText" v-html="$t('gradientText')"></span>
+          <p v-html="$t('jumboText')"></p>
     </div>
 </template>
 
@@ -79,7 +77,7 @@
         font-size: 1rem;
       }
 
-    span {
+    ::v-deep(span) {
       font-size: 1.8rem;
       color: rgb(220, 220, 220);
 
@@ -94,9 +92,10 @@
   }
 
   .gradientText {
+    text-transform: uppercase;
     background: linear-gradient(to top, black, #77f64b);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 600;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
   }
 </style>

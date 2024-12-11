@@ -1,6 +1,6 @@
 <template>
   <div id="AppFaq">
-    <h2>DOMANDE FREQUENTI</h2>
+    <h2>{{ $t('faqTitle') }}</h2>
 
     <div
       v-for="(item, index) in faqList"
@@ -8,7 +8,7 @@
       :class="['faq-item', { active: isActive(index) }]"
     >
       <div class="faq-question" @click="toggleAnswer(index)">
-        <h5>{{ item.question }}</h5>
+        <h5>{{ $t(item.question) }}</h5>
         <span>
           <i
             :class="isActive(index) ? 'fa-solid fa-minus' : 'fa-solid fa-plus'"
@@ -17,7 +17,7 @@
       </div>
 
       <div class="faq-answer">
-        <p>{{ item.answer }}</p>
+        <p>{{ $t(item.answer) }}</p>
       </div>
     </div>
   </div>
@@ -29,31 +29,11 @@ export default {
     return {
       activeIndex: null,
       faqList: [
-        {
-          question: "Che tipo di siti realizzate?",
-          answer:
-            "Creiamo landing page, siti vetrina, e-commerce e soluzioni personalizzate per ristoranti, startup tech e piccole imprese. Ottimizzati su tutti i dispositivi.",
-        },
-        {
-          question: "Quanto tempo richiederà lo sviluppo del sito?",
-          answer:
-            "Dipende dalla grandezza del sito, ma per un sito vetrina cerchiamo di fornire una versione finale entro una settimana dalla data di inizio.",
-        },
-        {
-          question: "Posso richiedere modifiche durante la creazione?",
-          answer:
-            "Sì, potrete contattarci in qualsiasi momento per discutere di modifiche o aggiunte, anche last minute.",
-        },
-        {
-          question: "Avrò il pieno controllo del sito una volta completato?",
-          answer:
-            "Sì, avrete la proprietà del codice, del design e del dominio. Su richiesta potremo mostrarvi anche come modificarlo autonomamente.",
-        },
-        {
-          question: "Offrite supporto continuo?",
-          answer:
-            "Sì, offriamo supporto e manutenzione continua per garantire che il tuo progetto sia sempre aggiornato.",
-        },
+        { question: 'QuestionOne', answer: 'AnswerOne' },
+        { question: 'QuestionTwo', answer: 'AnswerTwo' },
+        { question: 'QuestionThree', answer: 'AnswerThree' },
+        { question: 'QuestionFour', answer: 'AnswerFour' },
+        { question: 'QuestionFive', answer: 'AnswerFive' },
       ],
     };
   },

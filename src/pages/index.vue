@@ -33,11 +33,9 @@ import AppFaq from '@/components/AppFaq.vue';
 import AppFooter from '@/components/AppFooter.vue';
 import AppHowItWorks from '@/components/AppHowItWorks.vue';
 
-// Variabile per il loader
 const isLoading = ref(true);
 
 onMounted(() => {
-  // Simula un tempo di caricamento (esempio: 2 secondi)
   setTimeout(() => {
     isLoading.value = false;
   }, 3900);
@@ -45,7 +43,7 @@ onMounted(() => {
 </script>
 
 <style>
-/* Loader wrapper (sfondo e centratura) */
+
 .loader-wrapper {
   position: fixed;
   top: 0;
@@ -59,7 +57,6 @@ onMounted(() => {
   z-index: 9999;
 }
 
-/* Animazione rimbalzo */
 @keyframes bounce {
   0% {
     transform: translateY(-100px);
@@ -91,7 +88,6 @@ onMounted(() => {
   animation: bounce 4s ease-out infinite;
 }
 
-/* CSS originale */
 body {
   font-family: "Montserrat", sans-serif;
 
@@ -113,6 +109,7 @@ body {
       font-weight: 400;
       font-size: 2.3rem;
       color: rgb(220, 220, 220);
+      text-transform: uppercase;
 
       @media (max-width: 1000px) {
         font-size: 1.8rem;
@@ -131,21 +128,20 @@ body {
   }
 }
 
-/* Modifica lo stile della scrollbar */
 ::-webkit-scrollbar {
-  width: 12px; /* Larghezza della scrollbar */
-  height: 12px; /* Altezza per barre orizzontali */
+  width: 12px;
+  height: 12px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #77f64b; /* Colore del cursore */
-  border-radius: 6px; /* Arrotonda i bordi */
+  background-color: #77f64b;
+  border-radius: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #726e6e; /* Colore del tracciato */
+  background-color: #726e6e;
   background-color: rgba(18, 18, 18);
-  border-radius: 6px; /* Arrotonda i bordi del tracciato */
+  border-radius: 6px;
 }
 
 @keyframes fadeIn {

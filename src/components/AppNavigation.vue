@@ -7,11 +7,11 @@
       </div>
 
       <ul id="sectionsUlNav">
-        <li @click="scrollToSection('AppHead')">HOME</li>
-        <li @click="scrollToSection('AppCardsContainer')">SERVICES</li>
-        <li @click="scrollToSection('AppAboutUs')">ABOUT US</li>
-        <li @click="scrollToSection('AppFaq')">FAQ</li>
-        <li @click="scrollToSection('AppFooter')">CONTACTS</li>
+        <li @click="scrollToSection('AppHead')">{{ $t('home') }}</li>
+        <li @click="scrollToSection('AppCardsContainer')">{{ $t('services') }}</li>
+        <li @click="scrollToSection('AppAboutUs')">{{ $t('aboutUs') }}</li>
+        <li @click="scrollToSection('AppFaq')">{{ $t('faq') }}</li>
+        <li @click="scrollToSection('AppFooter')">{{ $t('contacts') }}</li>
       </ul>
     </div>
   </nav>
@@ -55,7 +55,7 @@ nav {
     max-width: 1865px;
     padding: 0 2rem;
 
-    @media (max-width: 1100px) {
+    @media (max-width: 1024px) {
         justify-content: center;
       }
 
@@ -69,8 +69,9 @@ nav {
       font-weight: 600;
       letter-spacing: 7px;
 
-      @media (max-width: 1100px) {
-        
+      cursor: default;
+
+      @media (max-width: 1024px) {
         letter-spacing: 7px;
       }
 
@@ -79,7 +80,7 @@ nav {
         margin-right: 1rem;
         opacity: .6;
 
-        @media (max-width: 1100px) {
+        @media (max-width: 1024px) {
           margin-right: 1.5rem;
           height: 70px;
       }
@@ -105,7 +106,12 @@ nav {
       border-radius: 48px;
       padding: .5rem 3rem;
 
-      @media (max-width: 1100px) {
+      @media (max-width: 1400px) {
+        padding: .5rem .5rem;
+        font-size: 1rem;
+      }
+
+      @media (max-width: 1024px) {
         display: none;
       }
 
@@ -115,6 +121,7 @@ nav {
         cursor: pointer;
         transition: all 0.3s linear;
         padding: 0.3rem 0.5rem;
+        text-transform: uppercase;
       }
 
       li::after {

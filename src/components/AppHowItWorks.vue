@@ -1,20 +1,20 @@
 <template>
-    <h2>HOW IT WORKS</h2>
+    <h2>{{ $t('howItWorks') }}</h2>
   
     <div id="cardsFlowContainer">
       <div class="cardContainer" ref="card1">
         <i class="fa-regular fa-comments"></i>
-        <h3 class="cardTitle">Tell us your vision</h3>
+        <h3 class="cardTitle">{{ $t('stepOne') }}</h3>
       </div>
   
       <div class="cardContainer" ref="card2">
         <i class="fa-solid fa-wand-sparkles"></i>
-        <h3 class="cardTitle">Recive the magic</h3>
+        <h3 class="cardTitle">{{ $t('stepTwo') }}</h3>
       </div>
   
       <div class="cardContainer" ref="card3">
         <i class="fa-solid fa-box-open"></i>
-        <h3 class="cardTitle">Get the material</h3>
+        <h3 class="cardTitle">{{ $t('stepThree') }}</h3>
       </div>
     </div>
   </template>
@@ -75,13 +75,13 @@
   <style lang="scss" scoped>
   
   #cardsFlowContainer {
-    margin: 4rem 0 12rem;
+    margin: 2rem 0 12rem;
     width: 100%;
     max-width: 1440px;
     display: flex;
     justify-content: space-around;
 
-    @media (max-width: 1200px) {
+    @media (max-width: 1400px) {
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
@@ -109,7 +109,7 @@
     opacity: 0;
     transition: all 0.3s linear !important;
 
-    @media (max-width: 1200px) {
+    @media (max-width: 1400px) {
       justify-content: space-around;
       width: 80vw;
       height: 214px;
@@ -133,7 +133,7 @@
     color: rgb(220, 220, 220);
     transition: color 0.2s linear;
 
-    @media (max-width: 1200px) {
+    @media (max-width: 800px) {
       font-size: 1.5rem;
     }
   }

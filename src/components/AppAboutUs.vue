@@ -1,8 +1,8 @@
 <template>
 
-  <h2 id="AppAboutUs">COLLAB REAL TIME</h2>
+  <h2 id="AppAboutUs">{{ $t('appAboutUsTitle') }}</h2>
 
-  <p>Ready to meet your evolving needs.</p>
+  <p>{{ $t('appAboutUsIntro') }}</p>
 
   <div id="teamContainer">
     <div class="teamMember">

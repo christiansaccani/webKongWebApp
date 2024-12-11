@@ -1,25 +1,25 @@
 <template>
-  <h2 id="AppCardsContainer">WHAT YOU'LL GET</h2>
+  <h2 id="AppCardsContainer">{{ $t('appCardsContainerTitle') }}</h2>
 
-  <p id="cardsIntro">We resolve problems associated with<br>creative procedures.</p>
+  <p id="cardsIntro">{{ $t('cardsIntro') }}</p>
 
   <div id="servicesContainer">
     <div class="cardContainer" ref="card1">
       <i class="fa-solid fa-code-branch"></i>
-      <h3 class="cardTitle">Developing</h3>
-      <p>High quality coding at a fraction of the cost.</p>
+      <h3 class="cardTitle">{{ $t('developing') }}</h3>
+      <p>{{ $t('developingSlogan') }}</p>
     </div>
 
     <div class="cardContainer" ref="card2">
       <i class="fa-solid fa-pencil"></i>
-      <h3 class="cardTitle">Tailor-Made design</h3>
-      <p>To make your vision reality.</p>
+      <h3 class="cardTitle">{{ $t('design') }}</h3>
+      <p>{{ $t('designSlogan') }}</p>
     </div>
 
     <div class="cardContainer" ref="card3">
       <i class="fa-solid fa-chart-simple"></i>
-      <h3 class="cardTitle">Social Media</h3>
-      <p>Surviving the jungle of social media.</p>
+      <h3 class="cardTitle">{{ $t('social') }}</h3>
+      <p>{{ $t('socialSlogan') }}</p>
     </div>
   </div>
 </template>
@@ -109,8 +109,8 @@ onMounted(() => {
   justify-content: space-between;
   cursor: pointer;
   background-color: #121212;
-  transform: translateY(100px);  /* Inizia fuori dalla vista */
-  opacity: 0;  /* Inizia invisibile */
+  transform: translateY(100px);
+  opacity: 0;
   transition: all 0.3s linear !important;
 
   @media (max-width: 1400px) {
@@ -119,7 +119,6 @@ onMounted(() => {
 }
 
 @media (max-width: 1100px) {
-  height: 300px;
   width: 80%;
 }
 }
