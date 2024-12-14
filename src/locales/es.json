@@ -1,0 +1,45 @@
+{
+    "home": "Inicio",
+    "services": "Servicios",
+    "aboutUs": "Nosotros",
+    "faq": "Faq",
+    "contacts": "Contactos",
+    "goUp": "Subir",
+
+    "gradientText": "Diseña soluciones digitales<br>y conquista espacios en línea",
+    "jumboText": "<span>Sabemos cómo funciona.</span> Necesitas diseños de alto nivel para destacar, pero contratar diseñadores puede ser costoso y lento. <br><span>Ahí es quando entra WebKong.</span>",
+
+    "appCardsContainerTitle": "Lo que obtendrás",
+    "cardsIntro": "We resolve problems associated with creative procedures. Resolvemos problemas relacionados con los procesos creativos.",
+    "developing": "Desarrollo",
+    "developingSlogan": "Codificación de alta calidad a una fracción del costo.",
+    "design": "Diseño a medida",
+    "designSlogan": "Para hacer realidad tu visión.",
+    "social": "Redes sociales",
+    "socialSlogan": "Sobrevivir la jungla.",
+
+    "appAboutUsTitle": "Colaboración en tiempo real",
+    "appAboutUsIntro": "Listos para adaptarnos a tus necesidades en constante evolución.",
+
+    "howItWorks": "Cómo funciona",
+    "stepOne": "Cuéntanos tu visión ",
+    "stepTwo": "Recibe la magia",
+    "stepThree": "Obtén el material",
+
+    "faqTitle": "Preguntas Frecuentes",
+
+    "QuestionOne": "¿Qué tipos de sitios crean?",
+    "AnswerOne": "Creamos páginas de aterrizaje, sitios de exhibición y soluciones personalizadas para restaurantes, startups tecnológicas y pequeñas empresas. Optimizados para todos los dispositivos.",
+
+    "QuestionTwo": "¿Cuánto tiempo llevará desarrollar el sitio?",
+    "AnswerTwo": "Depende del tamaño del sitio, pero para un sitio de exhibición, nuestro objetivo es entregar una versión final dentro de una semana desde la fecha de inicio.",
+
+    "QuestionThree": "¿Puedo solicitar cambios durante la creación?",
+    "AnswerThree": "Sí, puedes contactarnos en cualquier momento para discutir cambios o adiciones, incluso de última hora.",
+
+    "QuestionFour": "¿Tendré control total del sitio una vez finalizado?",
+    "AnswerFour": "Sí, tendrás la propiedad del código, el diseño y el dominio.",
+
+    "QuestionSix": "¿Cómo garantiza su empresa prácticas respetuosas con el medio ambiente?",
+    "AnswerSix": "Priorizamos un código ligero y eficiente para reducir el consumo de energía y el impacto ambiental. Además, colaboramos con herramientas y proveedores de hosting que siguen políticas ecológicas."
+}

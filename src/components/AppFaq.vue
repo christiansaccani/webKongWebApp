@@ -34,6 +34,7 @@ export default {
         { question: 'QuestionThree', answer: 'AnswerThree' },
         { question: 'QuestionFour', answer: 'AnswerFour' },
         { question: 'QuestionFive', answer: 'AnswerFive' },
+        { question: 'QuestionSix', answer: 'AnswerSix' },
       ],
     };
   },

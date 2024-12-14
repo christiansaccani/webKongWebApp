@@ -21,6 +21,7 @@
             <p @click="changeLanguage('en')">English</p>
             <p @click="changeLanguage('it')">Italiano</p>
             <p @click="changeLanguage('fr')">Français</p>
+            <p @click="changeLanguage('es')">Español</p>
           </div>
         </div>
       </div>
@@ -74,6 +75,10 @@ footer {
   align-items: center;
   padding-bottom: 2rem;
   color: rgb(220, 220, 220);
+
+  @media (max-width: 600px) {
+    padding-bottom: 8rem;
+  }
 
   section {
     width: 100%;

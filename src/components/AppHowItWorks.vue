@@ -46,14 +46,11 @@
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        // Se la carta non è già stata animata
         if (!card.classList.contains("animated")) {
-          // Applica l'animazione con il ritardo specificato
           setTimeout(() => {
             animateCard(card, delay);
-            // Aggiungi la classe per marcare la carta come animata
             card.classList.add("animated");
-          }, parseFloat(delay) * 1000); // Converte il ritardo da "0.4s" a millisecondi
+          }, parseFloat(delay) * 1000);
         }
       }
     });
@@ -63,10 +60,9 @@
   };
   
   onMounted(() => {
-    // Inizializza l'osservatore per ogni card con ritardi crescenti
     if (card1.value) observeVisibility(card1.value, "0s");
-    if (card2.value) observeVisibility(card2.value, "0.4s");  // Ritardo di 0.2s per la seconda card
-    if (card3.value) observeVisibility(card3.value, "0.8s");  // Ritardo di 0.4s per la terza card
+    if (card2.value) observeVisibility(card2.value, "0.4s");
+    if (card3.value) observeVisibility(card3.value, "0.8s");
   });
   </script>
   

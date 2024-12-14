@@ -1,8 +1,8 @@
 <template>
   <nav>
     <div id="navigationContainer">
-      <div id="companyNameNav">
-        <img src="../assets/WkRoundedLogo.png" alt="logo" />
+      <div  @click="scrollToSection('AppHead')" id="companyNameNav">
+        <img src="../assets/WkRoundedLogo.png" alt="Logo" />
           <h1>WEBKONG</h1>
       </div>
 
@@ -69,7 +69,12 @@ nav {
       font-weight: 600;
       letter-spacing: 7px;
 
-      cursor: default;
+      cursor: pointer;
+      transition: all 0.3s linear;
+
+      &:hover {
+        color: #77f64b;
+      }
 
       @media (max-width: 1024px) {
         letter-spacing: 7px;

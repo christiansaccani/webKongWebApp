@@ -15,7 +15,7 @@ const router = createRouter({
 // Middleware per aggiornare la lingua
 router.beforeEach((to, from, next) => {
   const locale = to.params.locale; // Ottieni la lingua dal percorso
-  const supportedLocales = ['en', 'it', 'fr']; // Lingue supportate
+  const supportedLocales = ['en', 'it', 'fr', 'es']; // Lingue supportate
 
   if (!locale || !supportedLocales.includes(locale)) {
     // Redirigi alla lingua di default se non valida

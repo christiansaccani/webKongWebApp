@@ -16,7 +16,7 @@
     "design": "Tailor-Made design",
     "designSlogan": "To make your vision reality.",
     "social": "Social Media",
-    "socialSlogan": "Surviving in media\u2019s the jungle",
+    "socialSlogan": "Surviving in the jungle",
 
     "appAboutUsTitle": "Collab real time",
     "appAboutUsIntro": "Ready to meet your evolving needs.",
@@ -41,5 +41,8 @@
     "AnswerFour": "Yes, you will own the code, design, and domain.",
 
     "QuestionFive": "Do you offer ongoing support?",
-    "AnswerFive": "Yes, we provide continuous support and maintenance to ensure uninterrupted service."
+    "AnswerFive": "Yes, we provide continuous support and maintenance to ensure uninterrupted service.",
+
+    "QuestionSix": "How does your company ensure environmentally friendly practices?",
+    "AnswerSix": "We prioritize lightweight and efficient code to reduce energy consumption and environmental impact. Additionally we partner with tools and hosting providers that follow green policies."
 }

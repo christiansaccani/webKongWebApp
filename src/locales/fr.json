@@ -41,5 +41,8 @@
     "AnswerFour": "Oui, vous aurez la propriété du code, du design et du domaine.",
 
     "QuestionFive": "Proposez-vous un support continu?",
-    "AnswerFive": "Oui, nous offrons un support et une maintenance continue pour garantir un service sans interruption."
+    "AnswerFive": "Oui, nous offrons un support et une maintenance continue pour garantir un service sans interruption.",
+
+    "QuestionSix": "Comment votre entreprise garantit-elle des pratiques respectueuses de l'environnement ?",
+    "AnswerSix": "Nous privilégions un code léger et efficace pour réduire la consommation d'énergie et l'impact environnemental. De plus, nous collaborons avec des outils et des fournisseurs d'hébergement qui suivent des politiques écologiques."
 }

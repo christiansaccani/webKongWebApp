@@ -173,12 +173,13 @@ h2 {
 #cardsIntro {
   max-width: 100vw;
   font-size: 1.8rem !important;
-  padding: 0 .5rem 4rem;
+  padding: 0 12rem 4rem;
   letter-spacing: 3px;
   color: #726e6e;
 
   @media (max-width: 1000px) {
     font-size: 1.5rem !important;
+    padding: 0 2rem 4rem;
   }
   @media (max-width: 600px) {
     font-size: 1.3rem !important;

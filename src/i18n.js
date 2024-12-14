@@ -4,6 +4,7 @@ import { createI18n } from 'vue-i18n';
 import en from './locales/en.json';
 import it from './locales/it.json';
 import fr from './locales/fr.json';
+import es from './locales/es.json';
 
 // Configurazione
 const i18n = createI18n({
@@ -12,7 +13,8 @@ const i18n = createI18n({
   messages: {
     en,
     it,
-    fr
+    fr,
+    es
   }
 });
 

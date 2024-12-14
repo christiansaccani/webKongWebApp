@@ -6,12 +6,14 @@
 
   <div id="teamContainer">
     <div class="teamMember">
-      <img src="../assets/CSuser.jpg" alt="Christian's Pic">
+      <img src="../assets/CSUser.jpg" alt="Christian's Pic">
     </div>
     <div class="teamMember">
-      <img src="../assets/EEsuser.jpg" alt="Elisabeth's Pic">
+      <img src="../assets/EEsUser.jpg" alt="Elisabeth's Pic">
     </div>
-    <div class="teamMember"></div>
+    <div class="teamMember">
+      <img src="../assets/EEmuser.jpg" alt="Elio's Pic">
+    </div>
   </div>
 
 </template>
