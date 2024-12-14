@@ -3,31 +3,22 @@ import { createRouter, createWebHistory } from 'vue-router/auto';
 import { routes } from 'vue-router/auto-routes';
 import i18n from '@/i18n'; // Importa la configurazione di vue-i18n
 
-// Aggiungi un middleware per gestire il prefisso della lingua nel percorso
+// Aggiungi la tua rotta con il prefisso per la lingua
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes: routes.map((route) => ({
-    ...route,
-    path: '/:locale' + route.path // Aggiungi il prefisso lingua
-  }))
-});
-
-// Middleware per aggiornare la lingua
-router.beforeEach((to, from, next) => {
-  const locale = to.params.locale; // Ottieni la lingua dal percorso
-  const supportedLocales = ['en', 'it', 'fr', 'es']; // Lingue supportate
-
-  if (!locale || !supportedLocales.includes(locale)) {
-    // Redirigi alla lingua di default se non valida
-    return next({ path: `/en${to.path}`, replace: true });
-  }
-
-  // Imposta la lingua corrente
-  if (i18n.global.locale !== locale) {
-    i18n.global.locale = locale;
-  }
-
-  next();
+  routes: [
+    {
+      path: '/:lang', // Prefisso lingua
+      name: 'Home',
+      component: routes[0].component, // Mantieni il componente esistente per la Home
+      beforeEnter: (to, from, next) => {
+        const lang = to.params.lang || 'en'; // Imposta la lingua di default a 'en'
+        i18n.global.locale = lang; // Imposta la lingua
+        next();
+      }
+    },
+    ...routes // Aggiungi tutte le altre rotte
+  ]
 });
 
 // Workaround per https://github.com/vitejs/vite/issues/11804
