@@ -5,7 +5,7 @@ import i18n from '@/i18n'; // Importa la configurazione di vue-i18n
 
 // Aggiungi il prefisso della lingua nella configurazione del router
 const router = createRouter({
-  history: createWebHistory(import.meta.env.MODE === 'production' ? '/webkong/' : import.meta.env.BASE_URL), // Gestisce correttamente la sottocartella in produzione
+  history: createWebHistory(import.meta.env.BASE_URL), // Gestisce correttamente la sottocartella in produzione
   routes: routes.map((route) => ({
     ...route,
     path: '/:lang' + route.path // Aggiungi il prefisso lingua
