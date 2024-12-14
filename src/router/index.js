@@ -3,25 +3,32 @@ import { createRouter, createWebHistory } from 'vue-router/auto';
 import { routes } from 'vue-router/auto-routes';
 import i18n from '@/i18n'; // Importa la configurazione di vue-i18n
 
-// Aggiungi la tua rotta con il prefisso per la lingua
+// Aggiungi il prefisso della lingua nella configurazione del router
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [
-    {
-      path: '/:lang', // Prefisso lingua
-      name: 'Home',
-      component: routes[0].component, // Mantieni il componente esistente per la Home
-      beforeEnter: (to, from, next) => {
-        const lang = to.params.lang || 'en'; // Imposta la lingua di default a 'en'
-        i18n.global.locale = lang; // Imposta la lingua
-        next();
-      }
-    },
-    ...routes // Aggiungi tutte le altre rotte
-  ]
+  history: createWebHistory(import.meta.env.MODE === 'production' ? '/webkong/' : import.meta.env.BASE_URL), // Gestisce correttamente la sottocartella in produzione
+  routes: routes.map((route) => ({
+    ...route,
+    path: '/:lang' + route.path // Aggiungi il prefisso lingua
+  }))
 });
 
-// Workaround per https://github.com/vitejs/vite/issues/11804
+// Middleware per aggiornare la lingua
+router.beforeEach((to, from, next) => {
+  const lang = to.params.lang || 'en'; // Se non è presente una lingua nel percorso, usa 'en' come lingua di default
+  const supportedLocales = ['en', 'it', 'fr', 'es']; // Lingue supportate
+
+  if (!supportedLocales.includes(lang)) {
+    // Se la lingua non è supportata, reindirizza alla lingua di default ('en')
+    return next({ path: `/en${to.path}`, replace: true });
+  }
+
+  // Imposta la lingua corrente
+  i18n.global.locale = lang;
+
+  next();
+});
+
+// Gestione degli errori del router
 router.onError((err, to) => {
   if (err?.message?.includes?.('Failed to fetch dynamically imported module')) {
     if (!localStorage.getItem('vuetify:dynamic-reload')) {
@@ -36,6 +43,7 @@ router.onError((err, to) => {
   }
 });
 
+// Attende che il router sia pronto e rimuove il flag di reload dinamico
 router.isReady().then(() => {
   localStorage.removeItem('vuetify:dynamic-reload');
 });
