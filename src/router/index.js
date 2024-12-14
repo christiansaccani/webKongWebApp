@@ -1,34 +1,33 @@
 // Composables
 import { createRouter, createWebHistory } from 'vue-router/auto';
 import { routes } from 'vue-router/auto-routes';
-import i18n from '@/i18n'; // Importa la configurazione di vue-i18n
+import i18n from '@/i18n';
 
-// Aggiungi il prefisso della lingua nella configurazione del router
 const router = createRouter({
-  history: createWebHistory(import.meta.env.MODE === 'production' ? '/en/' : import.meta.env.BASE_URL),
+  history: createWebHistory(import.meta.env.BASE_URL), 
   routes: routes.map((route) => ({
     ...route,
-    path: '/:lang' + route.path // Aggiungi il prefisso lingua
+    path: '/:lang' + route.path
   }))
 });
 
-// Middleware per aggiornare la lingua
 router.beforeEach((to, from, next) => {
-  const lang = to.params.lang || 'it'; // Imposta 'it' come lingua di default
-  const supportedLocales = ['en', 'it', 'fr', 'es']; // Lingue supportate
+  const lang = to.params.lang || 'en';
+  const supportedLocales = ['en', 'it', 'fr', 'es'];
 
   if (!supportedLocales.includes(lang)) {
-    // Se la lingua non è supportata, reindirizza alla lingua di default ('it')
-    return next({ path: `/it${to.path}`, replace: true });
+    return next({ path: `/en${to.path}`, replace: true });
   }
 
-  // Imposta la lingua corrente
   i18n.global.locale = lang;
+
+  if (!to.params.lang && to.path !== '/en') {
+    return next({ path: `/en${to.path}`, replace: true });
+  }
 
   next();
 });
 
-// Gestione degli errori del router
 router.onError((err, to) => {
   if (err?.message?.includes?.('Failed to fetch dynamically imported module')) {
     if (!localStorage.getItem('vuetify:dynamic-reload')) {
@@ -43,7 +42,6 @@ router.onError((err, to) => {
   }
 });
 
-// Attende che il router sia pronto e rimuove il flag di reload dinamico
 router.isReady().then(() => {
   localStorage.removeItem('vuetify:dynamic-reload');
 });
