@@ -12,7 +12,7 @@
       <img src="../assets/EEsUser.jpg" alt="Elisabeth's Pic">
     </div>
     <div class="teamMember">
-      <img src="../assets/EEmuser.jpg" alt="Elio's Pic">
+      <img src="../assets/EEmUser.jpg" alt="Elio's Pic">
     </div>
   </div>
 
