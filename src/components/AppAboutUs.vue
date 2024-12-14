@@ -6,7 +6,7 @@
 
   <div id="teamContainer">
     <div class="teamMember">
-      <img src="../assets/CSUser.jpg" alt="Christian's Pic">
+      <img src="../assets/CSuser.jpg" alt="Christian's Pic">
     </div>
     <div class="teamMember">
       <img src="../assets/EEsUser.jpg" alt="Elisabeth's Pic">
