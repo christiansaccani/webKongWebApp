@@ -8,13 +8,18 @@
       </div>
 
       <div id="contacts">
-        <a href="mailto:hello@webkong.net?subject=Richiesta%20Preventivo&body=Ciao,%20vorrei%20richiedere%20un%20preventivo.">hello@webkong.net</a>
+        <a
+          href="mailto:hello@webkong.net?subject=Richiesta%20Preventivo&body=Ciao,%20vorrei%20richiedere%20un%20preventivo.">hello@webkong.net</a>
         <p>Bologna, Italy</p>
       </div>
 
       <div id="socials">
-        <i class="fa-brands fa-linkedin-in"></i>
-        <i class="fa-brands fa-whatsapp"></i>
+        <a :href="whatsappLink" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/webkong/about/" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
         <div class="language-selector">
           <i class="fa-solid fa-earth-europe" @click.stop="toggleLanguageMenu"></i>
           <div v-if="showLanguageMenu" class="language-dropdown">
@@ -26,7 +31,7 @@
         </div>
       </div>
     </section>
-    <h5>© WebKong, 2024. All Rights Reserved.</h5>
+    <h5>© WebKong, 2025. All Rights Reserved.</h5>
   </footer>
 </template>
 
@@ -55,8 +60,12 @@
     const section = document.getElementById(sectionId);
     window.scrollTo({
       top: section.offsetTop - 90,
+      behavior: 'smooth',
     });
   };
+
+  const phoneNumber = '393337853150';
+  const whatsappLink = `https://wa.me/${phoneNumber}`;
 
   onMounted(() => {
     document.addEventListener('click', handleClickOutside);
@@ -95,7 +104,7 @@ footer {
     }
 
     #moveTo p {
-        cursor: pointer;
+      cursor: pointer;
     }
 
     #moveTo {
@@ -159,7 +168,7 @@ footer {
           color: #77f64b;
         }
       }
-      
+
       .language-selector {
         position: relative;
 
@@ -197,4 +206,3 @@ footer {
   }
 }
 </style>
-

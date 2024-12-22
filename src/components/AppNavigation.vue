@@ -74,6 +74,10 @@ nav {
 
       &:hover {
         color: #77f64b;
+
+        img {
+          opacity: 1;
+        }
       }
 
       @media (max-width: 1024px) {
@@ -84,6 +88,7 @@ nav {
         height: 70px;
         margin-right: 1rem;
         opacity: .6;
+        transition: all 0.3s linear;
 
         @media (max-width: 1024px) {
           margin-right: 1.5rem;
