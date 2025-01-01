@@ -1,5 +1,5 @@
 <template>
-  <footer id="AppFooter">
+  <footer>
     <section>
       <div id="moveTo">
         <p @click="scrollToSection('AppHead')">{{ $t('goUp') }}</p>

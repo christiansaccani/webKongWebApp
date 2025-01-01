@@ -54,7 +54,7 @@ export default {
   width: 100%;
   max-width: 1440px;
   color: rgb(220, 220, 220);
-  margin-bottom: 8rem;
+  margin-bottom: 2rem;
   padding: 0 2rem;
 }
 

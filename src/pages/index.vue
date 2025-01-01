@@ -18,6 +18,7 @@
       <AppHowItWorks />
       <div class="pageRule" />
       <AppFaq />
+      <AppContactForm />
       <AppFooter />
     </div>
   </body>
@@ -32,6 +33,7 @@ import AppAboutUs from '@/components/AppAboutUs.vue';
 import AppFaq from '@/components/AppFaq.vue';
 import AppFooter from '@/components/AppFooter.vue';
 import AppHowItWorks from '@/components/AppHowItWorks.vue';
+import AppContactForm from '@/components/AppContactForm.vue';
 
 const isLoading = ref(true);
 
@@ -130,7 +132,6 @@ body {
 
 ::-webkit-scrollbar {
   width: 12px;
-  height: 12px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -139,7 +140,6 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #726e6e;
   background-color: rgba(18, 18, 18);
   border-radius: 6px;
 }
