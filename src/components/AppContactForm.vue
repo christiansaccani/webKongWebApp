@@ -1,48 +1,60 @@
-
+//cambia il discorso mail, non è funzionale
 
 <template>
-    <h2 id="AppFooter">contact us</h2>
+  <h2 id="AppFooter">Contact Us</h2>
 
-    <div class="form-container">
-      <form @submit.prevent="handleSubmit">
-        <div class="form-row">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" v-model="form.name" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" v-model="form.email" required />
-          </div>
+  <div class="form-container">
+    <form @submit.prevent="handleSubmit">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" v-model="form.name" required />
         </div>
-        <div class="form-group full-width">
-          <label for="message">Message</label>
-          <textarea id="message" v-model="form.message" rows="4" required></textarea>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" v-model="form.email" required />
         </div>
-        <button type="submit">OPEN</button>
-      </form>
-    </div>
-  </template>
-  
-  <script>
-  export default {
-    data() {
-      return {
-        form: {
-          name: '',
-          email: '',
-          message: '',
-        },
-      };
-    },
-    methods: {
-      handleSubmit() {
-        console.log('Form inviato:', this.form);
-        alert('Form inviato con successo!');
+      </div>
+      <div class="form-group full-width">
+        <label for="message">Message</label>
+        <textarea id="message" v-model="form.message" rows="4" required></textarea>
+      </div>
+      <button type="submit">OPEN</button>
+    </form>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      form: {
+        name: '',
+        email: '',
+        message: '',
       },
+    };
+  },
+  methods: {
+    handleSubmit() {
+      const subject = encodeURIComponent(this.form.name);
+      const body = encodeURIComponent(
+        `Email: ${this.form.email}\n\nMessage:\n${this.form.message}`
+      );
+
+      window.location.href = `mailto:christian.saccani99@gmail.com?subject=${subject}&body=${body}`;
+
+      this.resetForm();
     },
-  };
-  </script>
+    resetForm() {
+      this.form.name = '';
+      this.form.email = '';
+      this.form.message = '';
+    },
+  },
+};
+</script>
+
   
   <style scoped>
   .form-container {

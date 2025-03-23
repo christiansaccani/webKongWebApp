@@ -11,9 +11,6 @@
     <div class="teamMember">
       <img src="../assets/EEsUser.jpg" alt="Elisabeth's Pic">
     </div>
-    <div class="teamMember">
-      <img src="../assets/EEmUser.jpg" alt="Elio's Pic">
-    </div>
   </div>
 
 </template>
